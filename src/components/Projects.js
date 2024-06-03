@@ -11,33 +11,32 @@ export default function Projects() {
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Places I've Worked
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-          I am grateful to the startup and corporate companies I've worked for, as they have significantly contributed to the development of my skills. 
+          <p className="mx-auto leading-relaxed text-base">
+          I am grateful to the startup and corporate companies I've worked for, as they have significantly contributed to the development of my skills. Hover over the logos to learn about the tasks and achievements accomplished with each respective company.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
             {projects.map((project) => (
-                <a
-                href={project.link}
+              <span
                 key={project.id}
                 className="sm:w-1/2 w-100 p-4">
                 <div className="flex relative">
                     <img
                     alt="gallery"
-                    className="absolute inset-0 w-full h-full object-cover object-center h-96"
+                    className="absolute inset-0 object-center h-96 w-96"
                     src={project.image}
                     />
                     <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                    <h2 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
-                        {project.title}
-                    </h2>
-                    <h1 className="title-font text-sm font-medium text-white mb-3">
-                        {project.subtitle}
-                    </h1>
-                    <p className="leading-relaxed whitespace-pre-line text-justify tracking-tighter">{project.description}</p>
+                      <h2 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
+                          {project.title}
+                      </h2>
+                      <h1 className="title-font text-sm font-medium text-white mb-3">
+                          {project.subtitle}
+                      </h1>
+                      <p className="leading-relaxed whitespace-pre-line text-justify tracking-tighter">{project.description}</p>
                     </div>
                 </div>
-                </a>
+              </span>
             ))}
         </div>
       </div>

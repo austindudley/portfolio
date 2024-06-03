@@ -22,7 +22,13 @@ export default function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
-      .then(() => alert("Message sent!"))
+      .then(() => {
+        setName('');
+        console.log(name);
+        setEmail('');
+        setMessage('');
+        alert("Message sent!");
+      })
       .catch((error) => alert(error));
   }
 
@@ -41,7 +47,7 @@ export default function Contact() {
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/place?q=toronto&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
-          <div className="bg-gray-900 relative flex flex-wrap py-10 px-10 rounded shadow-md">
+          <div className="bg-gray-900 relative flex flex-wrap py-10 px-10 rounded shadow-md md:pr-4 md:w-1/3">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
@@ -57,10 +63,6 @@ export default function Contact() {
               <span className="text-indigo-400 leading-relaxed">
                 austindudley10@email.com
               </span>
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
-                PHONE
-              </h2>
-              <p className="leading-relaxed">123-456-7890</p>
             </div>
           </div>
         </div>
@@ -82,6 +84,7 @@ export default function Contact() {
             <input
               type="text"
               id="name"
+              value={name}
               name="name"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setName(e.target.value)}
@@ -94,6 +97,7 @@ export default function Contact() {
             <input
               type="email"
               id="email"
+              value={email}
               name="email"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setEmail(e.target.value)}
@@ -107,6 +111,7 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
+              value={message}
               name="message"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               onChange={(e) => setMessage(e.target.value)}
