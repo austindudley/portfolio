@@ -47,7 +47,7 @@ export default function Contact() {
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/place?q=toronto&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
-          <div className="bg-gray-900 relative flex flex-wrap py-10 px-10 rounded shadow-md md:pr-4 md:w-1/3">
+          <div className="bg-gray-900 relative flex flex-wrap py-10 px-10 rounded shadow-md md:pr-5 md:w-100">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
