@@ -1,19 +1,27 @@
 import React from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Projects from "./components/Projects";
-import Navbar from "./components/Navbar";
-import Skills from './components/Skills';
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+
+import Navbar from "./pages/Navbar";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Work from "./pages/Work";
+import Skills from './pages/Skills';
+
 
 function App() {
   return (
-    <main className='text-gray-400 bg-gray-900 body-font'>
-      <Navbar />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
-    </main>
+    <BrowserRouter>
+      <main className='text-gray-400 bg-gray-900 body-font min-h-screen w-screen'>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<About />}></Route>
+          <Route path="work" element={<Work />}></Route>
+          <Route path="skills" element={<Skills />}></Route>
+          <Route path="contact" element={<Contact />}></Route>
+        </Routes>
+      </main>
+      
+    </BrowserRouter>
   );
 }
 

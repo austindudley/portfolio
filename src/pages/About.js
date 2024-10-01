@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from '../hero.svg';
 function About() {
     return(
@@ -14,16 +15,16 @@ function About() {
                         A software developer with above 4  years of experience in the information technology field, trained in web development, cloud engineering and data analysis. Recognized for the passion for technology, problem-solving and learning new concepts and technologies. Seeking to bring expertise and enthusiasm to a new opportunity.
                     </p>
                     <div className="flex justify-center">
-                        <a
-                        href="#contact"
+                        <Link
+                        to="contact"
                         className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
                         Work With Me
-                        </a>
-                        <a
-                        href="#projects"
+                        </Link>
+                        <Link
+                        to="work"
                         className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
                         See My Past Work
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

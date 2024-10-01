@@ -37,10 +37,18 @@ export const skills = [
     },
     {
         id:9,
-        skill:"Bootstrap"
+        skill:"REST APIs"
     },
     {
         id:10,
+        skill:"JSON"
+    },
+    {
+        id:11,
+        skill:"Bootstrap"
+    },
+    {
+        id:12,
         skill:"Git & GitHub"
     },
 ];
@@ -49,7 +57,7 @@ export const projects = [
         id: 1,
         title: "Software Developer",
         subtitle: "(Aug 2021 - Feb 2024) Toronto, Canada",
-        description: "1. Collaborated with business stakeholders to gather key performance indicators (KPIs) and data requirements needed to build dashboards.\n2. Leveraged EXCEL and SQL to understand data and their relationship.\n3. Applied data transformation using PYTHON library Pandas, crafted data visualization using PowerBI, providing visually intuitive insights to both technical and non-technical stakeholders.\n4. Demonstrated corrective actions to ensure data accuracy and integrity in all projects developed in an Agile Environment.\n5. Received reward from the Project Manager for the effort and passion I demonstrated for the Project.\n6. Written python code which runs on GCP airflow to automatically extract csv file from cloud storage. Then, analysed and transformed those data in BigQuery before exporting back into cloud storage.",
+        description: "1. Developed dynamic and responsive web applications using React.js , JavaScript ES6+ , HTML5 , and CSS3 , improving user engagement and ensuring cross-browser compatibility.\n2. Built and maintained reusable React components and modular HTML/CSS structures , enhancing code reusability, readability, and maintainability.\n3. Leveraged Collaborated with backend developers and UX/UI designers to create seamless user experiences, integrating RESTful APIs and optimizing front-end performance.\n4. Enhanced website performance by optimizing lazy loading images, and minimizing bundle sizes, improving page load times.\n5. Followed Agile methodologies and participated in daily stand-ups, sprint planning to ensure timely delivery of projects and adaptability to changing requirements.\n6. Collaborated with version control systems like Git for maintaining clean and organized codebases, resolving merge conflicts, and ensuring smooth code integration.\n7. Worked closely with the QA team to resolve bugs and improve the functionality and usability of web applications.\n8. Mentored junior developers by providing guidance on React best practices, code reviews, and architecture decisions, including efficient use of HTML and CSS ",
         image: photo3,
     },
     {
