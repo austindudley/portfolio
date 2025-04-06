@@ -12,7 +12,7 @@ export default function Projects() {
             Places I've Worked
           </h1>
           <p className="mx-auto leading-relaxed text-base">
-          I am grateful to the startup and corporate companies I've worked for, as they have significantly contributed to the development of my skills. Hover over the logos to learn about the tasks and achievements accomplished with each respective company.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque nulla ut finibus lacinia. Aenean cursus ultricies metus et tristique. 
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
